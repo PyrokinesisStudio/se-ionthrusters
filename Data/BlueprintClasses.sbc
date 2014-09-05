@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClassEntries>
+
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockIonThruster" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockIonThrusterSlanted1x1" />
+
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockIonThruster1x1" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockIonThrusterSlanted1x1" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockIonThruster" />
+
+  </BlueprintClassEntries>
+</Definitions>

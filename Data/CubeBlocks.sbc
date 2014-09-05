@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+      
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockIonThruster</SubtypeId>
+      </Id>
+      <DisplayName>Ion Thruster</DisplayName>
+      <Icon>Textures\IonThruster.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+       <Model>Models\IonThruster.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="Thrust" Count="80" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="1" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.3" File="Models\IonThrusterConstruction1.mwm" />
+        <Model BuildPercentUpperBound="0.6" File="Models\IonThrusterConstruction2.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\IonThrusterConstruction3.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BlockPairName>IonThruster</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <ForceMagnitude>120000</ForceMagnitude>
+      <MaxPowerConsumption>0.4</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <FlameDamageLengthScale>0.1</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>0.2</FlameLengthScale>
+	  <FlameIdleColor>
+        <X>0.0</X>
+        <Y>0.15</Y>
+        <Z>0.20</Z>
+        <W>0.25</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.0</X>
+        <Y>0.45</Y>
+        <Z>0.7</Z>
+        <W>0.35</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>1500</FlameVisibilityDistance>
+      <FlameGlareSize>0.508</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>ArcSmShipLrgJet</PrimarySound>
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockIonThruster1x1</SubtypeId>
+      </Id>
+      <DisplayName>Ion Thruster</DisplayName>
+      <Icon>Textures\IonThruster.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\SmallIonThruster1x1.mwm</Model>
+	  <Components>
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="Thrust" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\SmallIonThruster1x1Construction1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\SmallIonThruster1x1Construction2.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BlockPairName>IonThruster</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <ForceMagnitude>12000</ForceMagnitude>
+      <MaxPowerConsumption>0.03</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <FlameDamageLengthScale>0.1</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>0.2</FlameLengthScale>
+	  <FlameIdleColor>
+        <X>0.0</X>
+        <Y>0.15</Y>
+        <Z>0.20</Z>
+        <W>0.25</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.0</X>
+        <Y>0.54</Y>
+        <Z>0.9</Z>
+        <W>0.35</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>1000</FlameVisibilityDistance>
+      <FlameGlareSize>0.508</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>ArcSmShipSmJet</PrimarySound>
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LargeBlockIonThrusterSlanted1x1</SubtypeId>
+      </Id>
+      <DisplayName>Ion Thruster</DisplayName>
+      <Icon>Textures\IonThrusterSlanted.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+	    <Model>Models\IonThrusterSlanted.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="Thrust" Count="80" />
+        <Component Subtype="Construction" Count="15" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="1" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.3" File="Models\IonThrusterSlantedConstruction1.mwm" />
+        <Model BuildPercentUpperBound="0.6" File="Models\IonThrusterSlantedConstruction2.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\IonThrusterSlantedConstruction3.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BlockPairName>IonThrusterSlanted</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <ForceMagnitude>120000</ForceMagnitude>
+      <MaxPowerConsumption>0.4</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <FlameDamageLengthScale>0.1</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>0.20</FlameLengthScale>
+	  <FlameIdleColor>
+        <X>0.0</X>
+        <Y>0.15</Y>
+        <Z>0.20</Z>
+        <W>0.25</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.0</X>
+        <Y>0.45</Y>
+        <Z>0.7</Z>
+        <W>0.35</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>1500</FlameVisibilityDistance>
+      <FlameGlareSize>0.508</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>ArcSmShipLrgJet</PrimarySound>
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockIonThrusterSlanted1x1</SubtypeId>
+      </Id>
+      <DisplayName>Ion Thruster</DisplayName>
+      <Icon>Textures\IonThrusterSlanted.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\SmallIonThrusterSlanted1x1.mwm</Model>
+	  <Components>
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="Thrust" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\SmallIonThrusterSlanted1x1Construction1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\SmallIonThrusterSlanted1x1Construction2.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BlockPairName>IonThrusterSlanted</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <ForceMagnitude>12000</ForceMagnitude>
+      <MaxPowerConsumption>0.03</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <FlameDamageLengthScale>0.1</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>0.2</FlameLengthScale>
+	  <FlameIdleColor>
+        <X>0.0</X>
+        <Y>0.15</Y>
+        <Z>0.20</Z>
+        <W>0.25</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.0</X>
+        <Y>0.54</Y>
+        <Z>0.9</Z>
+        <W>0.35</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>1000</FlameVisibilityDistance>
+      <FlameGlareSize>0.508</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>ArcSmShipSmJet</PrimarySound>
+    </Definition>
+
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SmallBlockIonThruster</SubtypeId>
+      </Id>
+      <DisplayName>Ion Thruster (2x2)</DisplayName>
+      <Icon>Textures\SmallIonThruster.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="2" y="2" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\SmallIonThruster.mwm</Model>
+      <Components>
+        <Component Subtype="LargeTube" Count="1" />
+        <Component Subtype="Thrust" Count="2" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="SteelPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="2" />
+      </MountPoints>
+      <BlockPairName>IonThruster2x2</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>12</BuildTimeSeconds>
+      <ForceMagnitude>45000</ForceMagnitude>
+      <MaxPowerConsumption>0.12</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <FlameDamageLengthScale>0.1</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>0.20</FlameLengthScale>
+	  <FlameIdleColor>
+        <X>0.0</X>
+        <Y>0.15</Y>
+        <Z>0.20</Z>
+        <W>0.25</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.0</X>
+        <Y>0.45</Y>
+        <Z>0.7</Z>
+        <W>0.35</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustSmall</FlameGlareMaterial>
+      <FlameVisibilityDistance>1000</FlameVisibilityDistance>
+      <FlameGlareSize>0.808</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>ArcSmShipSmJet</PrimarySound>
+	  <Public>true</Public>
+    </Definition>
+	
+  </CubeBlocks>
+  
+  <BlockPositions>
+  </BlockPositions>
+</Definitions>
