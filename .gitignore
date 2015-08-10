@@ -7,3 +7,5 @@ Textures/large_motor_de.dds
 Textures/large_motor_ns.dds
 Textures/light_armor_construction_de.dds
 Textures/light_armor_construction_ns.dds
+Models/*.hkt
+Models/*.xml
